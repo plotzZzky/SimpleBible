@@ -6,7 +6,7 @@ book_columns = 'id, book_reference_id, testament_reference_id, name'  # colunas 
 
 
 def find_in_bible(book=None, capt=None, vers=None):
-    connection = sqlite3.connect("bible.sqlite")
+    connection = sqlite3.connect("app/bible.sqlite")
     cursor = connection.cursor()
 
     query = check_params(book, capt, vers)

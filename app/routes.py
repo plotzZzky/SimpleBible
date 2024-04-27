@@ -1,6 +1,6 @@
 from flask import request, Response, Flask, render_template
-from db import find_in_bible
-from utils import format_query
+from app.db import find_in_bible
+from app.utils import format_query
 
 
 app = Flask(__name__)
