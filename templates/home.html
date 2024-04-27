@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Home </title>
+</head>
+
+<body style="margin: 0; padding: 1vh 1vw; font-size: 1.1em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(31, 31, 31); color: white;">
+  <h1 style="text-align: center"> SimpleBible </h1>
+  <h2 style="text-align: center; margin: -2vh auto 0;"> Api simples da biblia </h2>
+
+  <div style="display: flex; flex-direction: column; width: 90%; float: left; margin: 2vh 0 0;">
+    <h3> End-Points: </h3>
+    <p><a style="color: grey" href="/?book=Atos dos Apóstolos">/</a> - Retorna a biblia em html </p>
+    <p><a style="color: grey" href="/api?book=1 Pedro">/api</a> - Retorna a biblia em json </p>
+    <p><a style="color: grey" href="/txt?book=Lucas&capt=5">/txt</a> - Retorna a biblia em txt </p>
+
+    <h3> Parametros: </h3>
+    <p> <a style="color: grey" href="/?book=Tiago">?book=Tiago </a>- Retorna apenas o livro de Tiago </p>
+    <p> <a style="color: grey" href="/?book=Tiago&capt=1">?book=Tiago&capt=1</a> - Retorna o capitulo 1 de Tiago </p>
+    <p> <a style="color: grey" href="/?book=Tiago&capt=1&vers=4">?book=Tiago&capt=1&vers=4</a> - Retorna apenas o versiculo 4 do capitulo 1 de Tiago </p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: end; gap: 5px 0; margin: 2vh 0 0 auto; padding: 10px 5px; border: 1px solid gray;">
+    <a style="color: grey" href="/?book=Gênesis"> Gênesis </a>
+    <a style="color: grey" href="/?book=Êxodo"> Êxodo </a>
+    <a style="color: grey" href="/?book=Levítico"> Levítico </a>
+    <a style="color: grey" href="/?book=Números"> Números </a>
+    <a style="color: grey" href="/?book=Deuteronômio"> Deuteronômio </a>
+    <a style="color: grey" href="/?book=Josué"> Josué </a>
+    <a style="color: grey" href="/?book=Juízes"> Juízes </a>
+    <a style="color: grey" href="/?book=Rute"> Rute </a>
+    <a style="color: grey" href="/?book=1 Samuel"> 1 Samuel </a>
+    <a style="color: grey" href="/?book=2 Samuel"> 2 Samuel </a>
+    <a style="color: grey" href="/?book=1 Reis"> 1 Reis </a>
+    <a style="color: grey" href="/?book=2 Reis"> 2 Reis </a>
+    <a style="color: grey" href="/?book=1 Crônicas"> 1 Crônicas </a>
+    <a style="color: grey" href="/?book=2 Crônicas"> 2 Crônicas </a>
+    <a style="color: grey" href="/?book=Esdras"> Esdras </a>
+    <a style="color: grey" href="/?book=Neemias"> Neemias </a>
+    <a style="color: grey" href="/?book=Ester"> Ester </a>
+    <a style="color: grey" href="/?book=Jó"> Jó </a>
+    <a style="color: grey" href="/?book=Salmos"> Salmos </a>
+    <a style="color: grey" href="/?book=Provérbios"> Provérbios </a>
+    <a style="color: grey" href="/?book=Eclesiastes"> Eclesiastes </a>
+    <a style="color: grey" href="/?book=Cânticos"> Cânticos </a>
+    <a style="color: grey" href="/?book=Isaías"> Isaías </a>
+    <a style="color: grey" href="/?book=Jeremias"> Jeremias </a>
+    <a style="color: grey" href="/?book=Lamentações"> Lamentações </a>
+    <a style="color: grey" href="/?book=Ezequiel"> Ezequiel </a>
+    <a style="color: grey" href="/?book=Daniel"> Daniel </a>
+    <a style="color: grey" href="/?book=Oséias"> Oséias </a>
+    <a style="color: grey" href="/?book=Joel"> Joel </a>
+    <a style="color: grey" href="/?book=Amós"> Amós </a>
+    <a style="color: grey" href="/?book=Obadias"> Obadias </a>
+    <a style="color: grey" href="/?book=Jonas"> Jonas </a>
+    <a style="color: grey" href="/?book=Miquéias"> Miquéias </a>
+    <a style="color: grey" href="/?book=Naum"> Naum </a>
+    <a style="color: grey" href="/?book=Habacuque"> Habacuque </a>
+    <a style="color: grey" href="/?book=Sofonias"> Sofonias </a>
+    <a style="color: grey" href="/?book=Ageu"> Ageu </a>
+    <a style="color: grey" href="/?book=Zacarias"> Zacarias </a>
+    <a style="color: grey" href="/?book=Malaquias"> Malaquias </a>
+    <a style="color: grey" href="/?book=Mateus"> Mateus </a>
+    <a style="color: grey" href="/?book=Marcos"> Marcos </a>
+    <a style="color: grey" href="/?book=Lucas"> Lucas </a>
+    <a style="color: grey" href="/?book=João"> João </a>
+    <a style="color: grey" href="/?book=Atos dos Apóstolos"> Atos dos Apóstolos </a>
+    <a style="color: grey" href="/?book=Romanos"> Romanos </a>
+    <a style="color: grey" href="/?book=1 Coríntios"> 1 Coríntios </a>
+    <a style="color: grey" href="/?book=2 CoríntiosGálatas"> 2 CoríntiosGálatas </a>
+    <a style="color: grey" href="/?book=Efésios"> Efésios </a>
+    <a style="color: grey" href="/?book=Filipenses"> Filipenses </a>
+    <a style="color: grey" href="/?book=Colossenses"> Colossenses </a>
+    <a style="color: grey" href="/?book=1 Tessalonicenses"> 1 Tessalonicenses </a>
+    <a style="color: grey" href="/?book=2 Tessalonicenses"> 2 Tessalonicenses </a>
+    <a style="color: grey" href="/?book=1 Timóteo"> 1 Timóteo </a>
+    <a style="color: grey" href="/?book=2 Timóteo"> 2 Timóteo </a>
+    <a style="color: grey" href="/?book=Tito"> Tito </a>
+    <a style="color: grey" href="/?book=Filemom"> Filemom </a>
+    <a style="color: grey" href="/?book=Hebreus"> Hebreus </a>
+    <a style="color: grey" href="/?book=Tiago"> Tiago </a>
+    <a style="color: grey" href="/?book=1 Pedro"> 1 Pedro </a>
+    <a style="color: grey" href="/?book=2 Pedro"> 2 Pedro </a>
+    <a style="color: grey" href="/?book=1 João"> 1 João </a>
+    <a style="color: grey" href="/?book=2 João"> 2 João </a>
+    <a style="color: grey" href="/?book=3 João"> 3 João </a>
+    <a style="color: grey" href="/?book=Judas"> Judas </a>
+    <a style="color: grey" href="/?book=Apocalipse"> Apocalipse </a>
+  </div>
+
+</body>
+
+</html>
