@@ -1,6 +1,6 @@
 from flask import request, Response, Flask, render_template
-from app.db import find_in_bible
-from app.utils import format_query
+from api.db import find_in_bible
+from api.utils import format_query
 
 
 app = Flask(__name__)
@@ -17,7 +17,8 @@ def get_html_bible():
     capt = request.args.get('capt', default=None)
     vers = request.args.get('vers', default=None)
 
-    query = find_in_bible(book, capt, vers)
+    query = find_in_bible(book.title(), capt, vers)
+    print(book.title())
     result = format_query(query)
 
     return Response(result)

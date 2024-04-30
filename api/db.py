@@ -1,4 +1,5 @@
 import sqlite3
+from pathlib import Path
 
 
 verse_columns = 'id, book_id, chapter, verse, text'  # colunas da tabela de versiculos
@@ -6,7 +7,9 @@ book_columns = 'id, book_reference_id, testament_reference_id, name'  # colunas 
 
 
 def find_in_bible(book=None, capt=None, vers=None):
-    connection = sqlite3.connect("app/bible.sqlite")
+    folder_path = Path(__file__).parent.resolve()
+    db = f"{folder_path}/bible.sqlite"
+    connection = sqlite3.connect(db)
     cursor = connection.cursor()
 
     query = check_params(book, capt, vers)
