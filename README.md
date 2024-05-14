@@ -14,15 +14,17 @@
 > retorna a Biblia em txt
 
 ### run_terminal.py 
-> Permite executar as consultas diretamente via terminal \
->       $ python run_terminal.py bible Tiago \
-> retorna o livro de Tiago \
+> Permite executar as consultas diretamente via terminal 
+> 
+> $ python run_terminal.py bible Tiago \
+> $ retorna o livro de Tiago 
 
 ### bash.sh
 > Adiciona a função bible() ao arquivo .bashrc do sistema(somente linux) para poder executar 
-> a função diretamente do terminal. \
->       $ bible 1_pedro 1:5 \
-> retorna o versiculo 5 do caipulo 1 de 1 Pedro 
+> a função diretamente do terminal. 
+> 
+> $ bible 1_pedro 1:5 \
+> $ retorna o versiculo 5 do caipulo 1 de 1 Pedro 
 
 ### Caracteristicas:
 - [x] Em desenvolvimento;
